@@ -3,7 +3,7 @@
 
  ## Links and Resources
 
- - [submission PR/lab-26 ](https://github.com/Reham-401-advanced-javascript/caps/pull/2)
+ - [submission PR/lab-26 ](https://github.com/Reham-401-advanced-javascript/rusty/pull/1)
 
 ## Documentation
 
