@@ -1,0 +1,42 @@
+$h1Color:white;
+$headerBackground:black;
+$footerBackground:grey;
+$result: #dedcdc73;
+
+main{
+  #url{
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    margin: 2%;
+    justify-content: center;
+    h3{
+      display: contents;    }
+  }
+  #rest{
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    margin: 2%;
+    justify-content: center;
+    margin-left: 8%;
+    button{
+      margin-right: 2%;
+    }
+    button:hover{
+      background-color: white;
+    }
+  }
+ #result{
+  display: flex;
+    flex-direction: row;
+    height: 400px;
+    background: $result;
+    margin: 2%;
+    padding: 25px 37px;
+  section{
+    display: table;
+    margin-right: 2%;
+  }
+ }
+}

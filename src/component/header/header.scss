@@ -1,0 +1,13 @@
+$headerBackground:black;
+$h1Color:white;
+
+header{
+  background-color: $headerBackground;
+  padding: 2%;
+  h1{
+    margin: 0% 0%;
+    color: $h1Color;
+  font-size: 38px;
+  text-align: center;
+  }
+}

@@ -1,0 +1,15 @@
+$h1Color:white;
+$headerBackground:black;
+$footerBackground:grey;
+$result: #dedcdc73;
+
+
+footer{
+  background-color: $footerBackground;
+  color: $headerBackground;
+  padding: 1.5%;
+   font-size: 17px;
+    bottom: 0%;
+    width: 100%;
+    padding-left: 2%;
+}
