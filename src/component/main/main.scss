@@ -1,50 +1,42 @@
-$h1Color:white;
-$headerBackground:black;
-$footerBackground:grey;
-$result: #dedcdc73;
+$backgroundColor: #efefef;
+$radius: 40%;
 
-main{
-  #url{
+form {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+
+  label {
     display: flex;
-    flex-direction: row;
-    height: 32px;
-    margin: 2%;
+    margin: 1rem 0;
     justify-content: center;
-    h3{
-      display: contents;    }
-  }
-  #rest{
-    display: flex;
-    flex-direction: row;
-    height: 32px;
-    margin: 2%;
-    justify-content: center;
-    margin-left: 8%;
-    button{
-      margin-right: 2%;
-      border: 1px solid #524b4b;
-    border-radius: 5px;
-    }
-    button:hover{
-      background-color: white;
+
+    &.methods {
+      span {
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: .25rem .5rem;
+        background: #ccc;
+        border-radius: 5px;
+
+        &:hover, &.active {
+          background: #fff;
+        }
+      }
     }
   }
-  input[type="text"] {
-    border: 2px solid #524b4b;
-    border-radius: 4px;
-    margin-left: 17px;
-    background: aliceblue;
 }
- #result{
-  display: flex;
-    flex-direction: row;
-    height: 400px;
-    background: $result;
-    margin: 2%;
-    padding: 25px 37px;
-  section{
-    display: table;
-    margin-right: 2%;
+
+.results {
+  background: #efefef;
+  border: 1px solid #ccc;
+  flex: 1;
+  margin: 1rem;
+  padding: 1rem;
+  justify-content: center;
+  height: 300px;
+
+  span {
+    margin: 1rem;
   }
- }
 }
