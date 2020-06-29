@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rusty/static/css/main.4398beff.chunk.css",
+    "main.js": "/rusty/static/js/main.a4250900.chunk.js",
+    "main.js.map": "/rusty/static/js/main.a4250900.chunk.js.map",
+    "runtime-main.js": "/rusty/static/js/runtime-main.e0a36da4.js",
+    "runtime-main.js.map": "/rusty/static/js/runtime-main.e0a36da4.js.map",
+    "static/js/2.4d906ac8.chunk.js": "/rusty/static/js/2.4d906ac8.chunk.js",
+    "static/js/2.4d906ac8.chunk.js.map": "/rusty/static/js/2.4d906ac8.chunk.js.map",
+    "index.html": "/rusty/index.html",
+    "precache-manifest.e8c012120a7960f3341a41b2bca1f283.js": "/rusty/precache-manifest.e8c012120a7960f3341a41b2bca1f283.js",
+    "service-worker.js": "/rusty/service-worker.js",
+    "static/css/main.4398beff.chunk.css.map": "/rusty/static/css/main.4398beff.chunk.css.map",
+    "static/js/2.4d906ac8.chunk.js.LICENSE.txt": "/rusty/static/js/2.4d906ac8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e0a36da4.js",
+    "static/js/2.4d906ac8.chunk.js",
+    "static/css/main.4398beff.chunk.css",
+    "static/js/main.a4250900.chunk.js"
+  ]
+}
