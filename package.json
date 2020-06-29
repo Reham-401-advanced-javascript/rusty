@@ -13,13 +13,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mahmoudkhudairi/simple-react.git"
+    "url": "git+https://github.com/Reham-Omar/rusty.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mahmoudkhudairi/simple-react/issues"
+    "url": "https://github.com/Reham-Omar/rusty/issues"
   },
   "homepage": "/",
   "dependencies": {
