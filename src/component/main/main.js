@@ -12,8 +12,8 @@ class Main extends React.Component {
       this.setState({ url });
     };
     handleClick = (e) => {
-      const word = this.state.url;
-      this.setState({ word });
+      const request = this.state.url;
+      this.setState({ request });
       // console.log('state',url);
   
     };
@@ -40,7 +40,7 @@ class Main extends React.Component {
           </div>
           <div id="result">
             <section>{this.state.method}</section>
-            <section>{this.state.word}</section>
+            <section>{this.state.request}</section>
           </div>
   
         </main>
