@@ -22,13 +22,13 @@ class Form extends React.Component {
         url: this.state.url,
         method: this.state.method,
       };
-
+      console.log('rrrrrrrrrrrrrrrr',request);
       // Clear old settings
       let url = '';
       let method = '';
 
       this.setState({request, url, method});
-      e.target.reset();
+      // e.target.reset();
 
     }
 
@@ -38,6 +38,7 @@ class Form extends React.Component {
   }
 
   handleChangeURL = e => {
+    // console.log('hhhgg',e);
     const url = e.target.value;
     this.setState({url});
   };
@@ -49,12 +50,12 @@ class Form extends React.Component {
 
   render() {
     return (
-      <>
-        <form onSubmit={this.handleSubmit}>
+      <section>
+        <form id='form' onSubmit={this.handleSubmit}>
           <label >
-            <span>URL: </span>
-            <input name='url' type='text' onChange={this.handleChangeURL} />
-            <button type="submit">GO!</button>
+            <span >URL: </span>
+            <input name='url' id='url' type='text' onChange={this.handleChangeURL} />
+            <button id="goButton" type="submit">GO!</button>
           </label>
           <label className="methods">
             <span className={this.state.method === 'get' ? 'active' : ''} id="get" onClick={this.handleChangeMethod}>GET</span>
@@ -67,7 +68,7 @@ class Form extends React.Component {
           <span className="method">{this.state.request.method}</span>
           <span className="url">{this.state.request.url}</span>
         </section>
-      </>
+      </section>
     );
   }
 }
