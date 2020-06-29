@@ -22,11 +22,19 @@ main{
     margin-left: 8%;
     button{
       margin-right: 2%;
+      border: 1px solid #524b4b;
+    border-radius: 5px;
     }
     button:hover{
       background-color: white;
     }
   }
+  input[type="text"] {
+    border: 2px solid #524b4b;
+    border-radius: 4px;
+    margin-left: 17px;
+    background: aliceblue;
+}
  #result{
   display: flex;
     flex-direction: row;
