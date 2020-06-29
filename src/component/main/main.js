@@ -22,7 +22,6 @@ class Form extends React.Component {
         url: this.state.url,
         method: this.state.method,
       };
-      console.log('rrrrrrrrrrrrrrrr',request);
       // Clear old settings
       let url = '';
       let method = '';
