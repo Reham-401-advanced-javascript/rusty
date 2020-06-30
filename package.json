@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/Reham-Omar/rusty/issues"
   },
-  "homepage": "https://Reham-Omar.github.io/rusty/",
+  "homepage": "/",
   "dependencies": {
     "gh-pages": "^3.1.0",
     "node-sass": "^4.14.1",

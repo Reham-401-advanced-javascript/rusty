@@ -1,13 +1,13 @@
 import React from 'react';
 import './footer.scss';
 
-  class Footer extends React.Component {
-    render() {
-      return (
-        <footer>
+class Footer extends React.Component {
+  render() {
+    return (
+      <footer>
           &copy; 2020 Reham Omar ^_^
-        </footer>
-      );    }
-  }
+      </footer>
+    );    }
+}
   
-  export default Footer;
+export default Footer;
