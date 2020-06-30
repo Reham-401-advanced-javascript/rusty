@@ -1,18 +1,18 @@
-# LAB-27 - eact Testing and Deployment
+# LAB-28- Props and State
 ### Author: Reham Omar AL-Sobh
 
  ## Links and Resources
 
- - [submission PR/lab-27](https://github.com/Reham-401-advanced-javascript/rusty/pull/2)
+ - [submission PR/lab-28](https://github.com/Reham-401-advanced-javascript/rusty/pull/3)
 
 ## Documentation
 
-In phase 2, we will be building on our working foundation, creating a full test suite and deploying our application into the cloud so that it is consumable for public access.
+In phase 3, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
 
-The following user/developer stories detail the major functionality for this phase of the project.
+The following user stories detail the major functionality for this phase of the project.
 
-As a user, I expect to be able to use the RESTy application from anywhere via a public web server
-As a user, I want to be assured the application will always operate to my expectations.
+As a user, I want to enter the URL to an API and issue a GET request so that I can retrieve it’s data
+As a user, I want to see the results returned from an API request in my browser in a readable format
 
 
 ## deployment links
@@ -31,4 +31,4 @@ As a user, I want to be assured the application will always operate to my expect
 
 ## UML
 
-[UML Diagrame ](assest/lab26.jpg)
+[UML Diagrame ](assest/lab28.jpg)

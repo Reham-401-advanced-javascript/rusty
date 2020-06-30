@@ -7,31 +7,30 @@ class Form extends React.Component {
     super(props);
     this.state = {
       url: '',
-      method: '',
+      method: 'get',
       request: {},
     };
   }
 
-  handleSubmit = e => {
+  handleSubmit = async e => {
+
     e.preventDefault();
+    e.target.reset();
 
-    if ( this.state.url && this.state.method ) {
+    if (this.state.url && this.state.method) {
+      const url = this.state.url;
+      const method = this.state.method;
+      const raw = await fetch(url,{method: method} );
+      const data = await raw.json();
+      // console.log('raaaaaaaaaaaaw', raw);
+      // const results = data.results.reduce((list, person) => {
+      //   list.push({ name: person.name, url: person.url });
+      //   return list;
+      // }, []);
+      // this.props.update(raw.headers, data)
+      this.props.update(data)
 
-      // Make an object that would be suitable for superagent
-      let request = {
-        url: this.state.url,
-        method: this.state.method,
-      };
-      // Clear old settings
-      let url = '';
-      let method = '';
-
-      this.setState({request, url, method});
-      e.target.reset();
-
-    }
-
-    else {
+    } else {
       alert('missing information');
     }
   }
@@ -39,13 +38,20 @@ class Form extends React.Component {
   handleChangeURL = e => {
     // console.log('hhhgg',e);
     const url = e.target.value;
-    this.setState({url});
+    this.setState({ url });
   };
 
   handleChangeMethod = e => {
     const method = e.target.id;
     this.setState({ method });
   };
+  // handleDelete = (deletedPerson) => {
+  //   console.log(deletedPerson.name);
+  //   const filterd = this.state.filter((person) => {
+  //     return person.name !== deletedPerson.name;
+  //   });
+  //   this.setState({ url: filterd });
+  // };
 
   render() {
     return (
@@ -63,14 +69,13 @@ class Form extends React.Component {
             <span className={this.state.method === 'delete' ? 'active' : ''} id="delete" onClick={this.handleChangeMethod}>DELETE</span>
           </label>
         </form>
-        <section className="results">
-          <span className="method">{this.state.request.method}</span>
-          <span className="url">{this.state.request.url}</span>
-        </section>
+
       </section>
     );
   }
 }
 
+
+
+
 export default Form;
-  

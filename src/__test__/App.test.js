@@ -48,20 +48,20 @@ describe('<Main/>', () => {
     url.simulate('change', { target: { value: 'https://reactjs.org/docs/testing.html' } });
     expect(form.state('url')).toBe('https://reactjs.org/docs/testing.html');
   });
-  it('it properly display the users input in the output area on form submit', () => {
-    const form = mount(<Main />);
-    const url = form.find('#url');
-    url.simulate('change', { target: { value: 'https://reactjs.org/docs/testing.html' } });
-    const button = form.find('#get');
-    button.simulate('click');
-    const go = form.find('#form');
-    go.simulate('submit');
+  // it('it properly display the users input in the output area on form submit', () => {
+  //   const form = mount(<Main />);
+  //   const url = form.find('#url');
+  //   url.simulate('change', { target: { value: 'https://reactjs.org/docs/testing.html' } });
+  //   const button = form.find('#get');
+  //   button.simulate('click');
+  //   const go = form.find('#form');
+  //   go.simulate('submit');
 
-    expect(form.state('request')).toStrictEqual({ url: 'https://reactjs.org/docs/testing.html', method: 'get'});
+  //   expect(form.state('request')).toStrictEqual({ url: 'https://reactjs.org/docs/testing.html', method: 'get'});
 
  
-    // expect(form.state('request')).toBe('get    https://reactjs.org/docs/testing.html');
-  });
+  //   // expect(form.state('request')).toBe('get    https://reactjs.org/docs/testing.html');
+  // });
  
   it(' Renders correctly', () => {
     const tree = renderer.create(<Main />).toJSON();
