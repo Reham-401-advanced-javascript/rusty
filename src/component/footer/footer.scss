@@ -1,0 +1,18 @@
+$h1Color:white;
+$headerBackground:black;
+$footerBackground:grey;
+$result: #dedcdc73;
+
+
+footer{
+  background-color: $footerBackground;
+  color: $headerBackground;
+  padding: 1.5%;
+   font-size: 17px;
+    bottom: 0%;
+    width: 100%;
+    font-family: sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px 5px #ece1e1;
+
+}
