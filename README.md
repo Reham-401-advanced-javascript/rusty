@@ -16,7 +16,7 @@ As a user, I want to be assured the application will always operate to my expect
 
 
 ## deployment links
- - [netlify]( https://deploy-preview-2--brave-kepler-54140e.netlify.app/)
+ - [netlify]( https://brave-kepler-54140e.netlify.app/)
  - [github ](https://reham-401-advanced-javascript.github.io/rusty/)
 
 
