@@ -16,7 +16,7 @@ As a user, I want to see the results returned from an API request in my browser 
 
 
 ## deployment links
- - [netlify]( https://brave-kepler-54140e.netlify.app/)
+ - [netlify]( https://flamboyant-wing-6d071e.netlify.app/)
  - [github ](https://reham-401-advanced-javascript.github.io/rusty/)
 
 
