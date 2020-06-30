@@ -28,7 +28,7 @@ class Form extends React.Component {
       //   return list;
       // }, []);
       // this.props.update(raw.headers, data)
-      this.props.update(data)
+      this.props.update(data);
 
     } else {
       alert('missing information');
