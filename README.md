@@ -14,6 +14,12 @@ The following user/developer stories detail the major functionality for this pha
 As a user, I expect to be able to use the RESTy application from anywhere via a public web server
 As a user, I want to be assured the application will always operate to my expectations.
 
+
+## deployment links
+ - [netlify]( https://deploy-preview-2--brave-kepler-54140e.netlify.app/)
+ - [github ](https://reham-401-advanced-javascript.github.io/rusty/)
+
+
 ## Setup
  `npx create-react-app rusty `
  `npm install node-sass   `
@@ -25,4 +31,4 @@ As a user, I want to be assured the application will always operate to my expect
 
 ## UML
 
-[UML Diagrame ](assest/)
+[UML Diagrame ](assest/lab26.jpg)
