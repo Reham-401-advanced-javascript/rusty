@@ -54,7 +54,7 @@ describe('<Main/>', () => {
     url.simulate('change', { target: { value: 'https://reactjs.org/docs/testing.html' } });
     const button = form.find('#get');
     button.simulate('click');
-    const go = form.find('#goButton');
+    const go = form.find('#form');
     go.simulate('submit');
 
     expect(form.state('request')).toStrictEqual({ url: 'https://reactjs.org/docs/testing.html', method: 'get'});

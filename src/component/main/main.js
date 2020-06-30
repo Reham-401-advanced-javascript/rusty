@@ -27,7 +27,7 @@ class Form extends React.Component {
       let method = '';
 
       this.setState({request, url, method});
-      // e.target.reset();
+      e.target.reset();
 
     }
 
