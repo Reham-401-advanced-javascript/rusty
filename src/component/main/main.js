@@ -16,7 +16,7 @@ class Form extends React.Component {
 
     e.preventDefault();
     e.target.reset();
-
+    
     if (this.state.url && this.state.method) {
       const url = this.state.url;
       const method = this.state.method;
