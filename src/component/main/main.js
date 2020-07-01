@@ -22,13 +22,21 @@ class Form extends React.Component {
       const method = this.state.method;
       const raw = await fetch(url,{method: method} );
       const data = await raw.json();
+      let head ;
+      raw.headers.forEach(value =>{
+        head = { 'Content-Type': value };
+      });  
+      let results = {
+        Headers: head,
+        Response: data,
+      };     
       // console.log('raaaaaaaaaaaaw', raw);
       // const results = data.results.reduce((list, person) => {
       //   list.push({ name: person.name, url: person.url });
       //   return list;
       // }, []);
       // this.props.update(raw.headers, data)
-      this.props.update(data);
+      this.props.update(results);
 
     } else {
       alert('missing information');

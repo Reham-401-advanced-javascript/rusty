@@ -8,7 +8,6 @@ function Results (props){
     return (
       <section>
         <ReactJson  src= {props.response} />
-        <ReactJson  src={props.headers}/>
       </section>
     );
   }else return <section></section>;

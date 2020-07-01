@@ -14,10 +14,12 @@ class App extends React.Component{
     this.state = {};
   }
    handleUpdate = (updated) =>{
+     let header=updated.Headers;
+     let response=updated.Response;
+
      // console.log('uppppppppppppppppp',updated);
-     let Headers = {'Content-Type': 'application/json'};
-     // this.setState({Headers:{headers}, Response:{updated}});
-     this.setState({Headers, Response:{updated}});
+     
+     this.setState({Headers:{header}, Response:{response}});
 
    }
    render(){
