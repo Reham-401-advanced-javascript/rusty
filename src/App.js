@@ -4,7 +4,6 @@ import Main from './component/main/main.js';
 import Results from './component/reaults/results.js';
 
 import Footer from './component/footer/footer.js';
-import './App.scss';
 
 
 
@@ -27,7 +26,7 @@ class App extends React.Component{
        <>
          <Header />
          <Main  update={this.handleUpdate}/>
-         <Results  response={this.state} headers={this.state.Headers}/>
+         <Results  response={this.state} />
          <Footer />
 
        </>

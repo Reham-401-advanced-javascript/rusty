@@ -9,6 +9,7 @@ class Form extends React.Component {
       url: '',
       method: 'get',
       request: {},
+      results:[],
     };
   }
 
@@ -18,8 +19,8 @@ class Form extends React.Component {
     e.target.reset();
     
     if (this.state.url && this.state.method) {
-      const url = this.state.url;
-      const method = this.state.method;
+      let url = this.state.url;
+      let method = this.state.method || 'get';
       const raw = await fetch(url,{method: method} );
       const data = await raw.json();
       let head ;
@@ -29,14 +30,17 @@ class Form extends React.Component {
       let results = {
         Headers: head,
         Response: data,
-      };     
+      };  
+      url = await '';
+      method =await '';   
+      await this.setState({results, url, method});
       // console.log('raaaaaaaaaaaaw', raw);
       // const results = data.results.reduce((list, person) => {
       //   list.push({ name: person.name, url: person.url });
       //   return list;
       // }, []);
       // this.props.update(raw.headers, data)
-      this.props.update(results);
+      await this.props.update(results);
 
     } else {
       alert('missing information');

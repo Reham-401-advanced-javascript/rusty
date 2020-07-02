@@ -4,6 +4,7 @@ import '../main/main.scss';
 
 
 function Results (props){
+  // console.log('ffffffffffffffffffff',props);
   if (props.response.Headers) {
     return (
       <section>
