@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "de3e45b425bf8a9606e0f1c1ef2c69e1",
+    "revision": "1715debbb962a32641fa19123fb24d63",
     "url": "/rusty/index.html"
   },
   {
-    "revision": "0f99eaa79b109c4ac00c",
-    "url": "/rusty/static/css/main.4398beff.chunk.css"
+    "revision": "f3b38f540086b803efe5",
+    "url": "/rusty/static/css/main.dd242e0c.chunk.css"
   },
   {
     "revision": "18d9e13988852935c9b9",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/rusty/static/js/2.8cb5ba7e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0f99eaa79b109c4ac00c",
-    "url": "/rusty/static/js/main.d891c718.chunk.js"
+    "revision": "f3b38f540086b803efe5",
+    "url": "/rusty/static/js/main.9a332d99.chunk.js"
   },
   {
     "revision": "9f6e4acaa7270368e021",
