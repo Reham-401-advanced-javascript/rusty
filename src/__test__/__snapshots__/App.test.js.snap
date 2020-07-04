@@ -56,5 +56,30 @@ exports[`<Main/>  Renders correctly 1`] = `
       </span>
     </label>
   </form>
+  <div
+    id="body"
+  >
+    <textarea
+      defaultValue=""
+      disabled={true}
+      name="requestBody"
+      placeholder="Raw JSON Body"
+      spellCheck="false"
+    />
+  </div>
+  <section
+    className="results"
+  >
+    <span
+      className="method"
+    >
+      get
+    </span>
+    <span
+      className="url"
+    >
+      
+    </span>
+  </section>
 </section>
 `;

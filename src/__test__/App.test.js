@@ -1,8 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Main from '../component/main/main.js';
+import Main from '../component/form/form.js';
 import renderer from 'react-test-renderer';
-import ReactDOM from "react-dom";
 // import { render } from '@testing-/library/react';
 
 
