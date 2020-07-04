@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './header.scss';
 
 class Header extends React.Component {
@@ -6,6 +7,16 @@ class Header extends React.Component {
     return (
       <header>
         <h1>RESTy</h1>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <NavLink to="/history">history</NavLink>
+            </li>
+          </ul>
+        </nav>
       </header>
     );
   }

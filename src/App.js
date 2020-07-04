@@ -1,8 +1,9 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 import Header from './component/header/header.js';
-import Main from './component/main/main.js';
+import Main from './component/form/form.js';
 import Results from './component/reaults/results.js';
-
+import History from './component/history/history.js';
 import Footer from './component/footer/footer.js';
 
 
@@ -10,23 +11,37 @@ import Footer from './component/footer/footer.js';
 class App extends React.Component{
   constructor (props){
     super(props);
-    this.state = {};
+    this.state = {
+      loading: false,
+    };
   }
    handleUpdate = (updated) =>{
      let header=updated.Headers;
      let response=updated.Response;
 
-     // console.log('uppppppppppppppppp',updated);
-     
      this.setState({Headers:{header}, Response:{response}});
 
+   }
+   toggleLoading = () => {
+     this.setState({ loading: !this.state.loading });
    }
    render(){
      return (
        <>
          <Header />
-         <Main  update={this.handleUpdate}/>
-         <Results  response={this.state} />
+         <Route exact path='/'>
+           <main>
+             <Main  update={this.handleUpdate} toggleLoading={this.toggleLoading}/>
+             <Results  response={this.state} />
+           </main>
+         </Route>
+         <Route exact path='/history'>
+           <main>
+             <History />
+           </main>
+         </Route>
+        
+
          <Footer />
 
        </>
@@ -34,3 +49,4 @@ class App extends React.Component{
    }
 }
 export default App;
+

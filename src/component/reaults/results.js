@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactJson from 'react-json-view';
-import '../main/main.scss';
+import '../form/form.scss';
 
 
 function Results (props){
   // console.log('ffffffffffffffffffff',props);
   if (props.response.Headers) {
     return (
-      <section>
-        <ReactJson  src= {props.response} />
-      </section>
+      <div className={`loading-${props.loading}`}>
+
+        <section>
+          <ReactJson  src= {props.response} />
+        </section>
+      </div>
     );
   }else return <section></section>;
 }
