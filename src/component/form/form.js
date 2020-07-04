@@ -38,7 +38,7 @@ class Form extends React.Component {
       case 'post':
       case 'put':
         console.log('post');
-        await this.postAndPutHandler(e);
+        await this.putPost(e);
         break;
       case 'delete':
         console.log('delete');
@@ -62,7 +62,6 @@ class Form extends React.Component {
       }
       this.props.toggleLoading();
       this.setState({url, method});
-      // console.log(e.target.value);
     }catch(err){
       console.log(err);
     }
@@ -151,34 +150,29 @@ class Form extends React.Component {
     const method = e.target.id;
     this.setState({ method });
     this.activation();
-    // this.setState({ request: '' });
-    // this.setState({ url: '' });
-    // this.setState({ results: '' });
-
-
+  
   };
-  postAndPutHandler = async (e) => {
+  putPost = async (e) => {
     let url = this.state.url;
     let method = this.state.method ;
-    // let body=this.state.body;
     let request = {
       url: this.state.url,
       method: this.state.method,
     };
     try{
       const options = {
-        method: `${this.state.method}`.toUpperCase(),
+        method: this.state.method,
         body: JSON.stringify(this.state.body),
         headers: {
           'Content-Type': 'application/json',
         },
       };
       //   console.log('oooooooooooooooooooooo',options.body);
-      const rawApiData = await fetch(this.state.url, options);
-      const jsonApiData = await rawApiData.json();
+      const data = await fetch(this.state.url, options);
+      const jsonData = await data.json();
       await this.setState({ url, method,request});
       
-      this.props.update(jsonApiData);
+      this.props.update(jsonData);
     }catch(err){
       console.log(err);
     }
@@ -187,14 +181,14 @@ class Form extends React.Component {
   deleteHandler = async (e) => {
     try{
       const options = {
-        method: `${this.state.method}`.toUpperCase(),
+        method: this.state.method,
         headers: {
           'Content-Type': 'application/json',
         },
       };
-      const rawApiData = await fetch(this.state.url, options);
-      const jsonApiData = await rawApiData.json();
-      this.props.update(jsonApiData);
+      const data = await fetch(this.state.url, options);
+      const jsonData = await data.json();
+      this.props.update(jsonData);
     }catch(err){
       console.log(err);
     }

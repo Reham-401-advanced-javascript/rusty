@@ -1,4 +1,5 @@
 import React from 'react';
+import '../history/history.scss';
 
 class History extends React.Component{
   key = 0;

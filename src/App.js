@@ -32,7 +32,7 @@ class App extends React.Component{
          <Route exact path='/'>
            <main>
              <Main  update={this.handleUpdate} toggleLoading={this.toggleLoading}/>
-             <Results  response={this.state} />
+             <Results loading={this.state.loading} response={this.state} />
            </main>
          </Route>
          <Route exact path='/history'>
