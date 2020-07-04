@@ -1,0 +1,22 @@
+$headerBackground:black;
+$h1Color:white;
+
+header{
+  background-color: $headerBackground;
+  padding: 1%;
+  box-shadow: 3px 4px 5px #2f2e2e;
+  h1{
+    margin: 0% 0%;
+    color: $h1Color;
+  font-size: 38px;
+  text-align: center;
+  text-shadow: 1px 1px 2px black, 0 0 25px #47477d, 0 0 5px #d61a50;
+  }
+  li {
+    display: inline;
+    font-variant: all-small-caps;
+    margin-right: 75px;
+    font-family: cursive;
+    text-decoration: none;
+  }
+}
